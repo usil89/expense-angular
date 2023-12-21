@@ -3,7 +3,7 @@ import { Expense } from '../../models/expense';
 
 import { ExpenseService } from '../../services/expense.service';
 import { Router , ActivatedRoute, RouterLink, RouterLinkActive} from '@angular/router';
-import { NgFor, NgForOf } from '@angular/common';
+import { CommonModule, NgFor, NgForOf, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -15,7 +15,9 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     RouterLink,
     NgFor,
-    RouterLinkActive
+    RouterLinkActive,
+    CommonModule,
+    NgIf
     
 ],
   
