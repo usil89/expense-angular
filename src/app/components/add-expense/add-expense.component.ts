@@ -2,12 +2,22 @@ import { Component, OnInit  } from '@angular/core';
 import { Expense } from '../../models/expense';
 
 import { ExpenseService } from '../../services/expense.service';
-import { Router , ActivatedRoute} from '@angular/router';
+import { Router , ActivatedRoute, RouterLink, RouterLinkActive} from '@angular/router';
+import { NgFor, NgForOf } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  //standalone: true,
+  standalone: true,
   selector: 'app-add-expense',
   
+  imports: [
+    NgForOf,
+    FormsModule,
+    RouterLink,
+    NgFor,
+    RouterLinkActive
+    
+],
   
   templateUrl: './add-expense.component.html',
   styleUrl: './add-expense.component.css'
