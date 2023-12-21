@@ -2,7 +2,7 @@ export class Expense {
 
     id!: number;
     expense!: string;
-    amount!: number;
+    amount!: number ;
     description!: string;
 
 }
