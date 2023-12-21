@@ -22,9 +22,9 @@ const routers: Routes = [
 
 @NgModule({
   declarations: [
-    // AppComponent,
+    //AppComponent,
     //ListExpensesComponent,
-    //AddExpenseComponent
+    AddExpenseComponent
   ],
   imports: [
     BrowserModule,
@@ -35,11 +35,11 @@ const routers: Routes = [
     
     HttpClientModule,
     FormsModule,
-    ListExpensesComponent,
-    AddExpenseComponent,
+    //ListExpensesComponent,
+    //AddExpenseComponent,
     RouterModule.forRoot(routers)
   ],
-  providers: [HttpClientModule],
+  providers: [HttpClientModule,RouterLink],
   //bootstrap: [AppComponent],
   bootstrap: []
 })

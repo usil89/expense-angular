@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AddExpenseComponent } from './components/add-expense/add-expense.component';
 import { ListExpensesComponent } from './components/list-expenses/list-expenses.component';
 import { ExpenseService } from './services/expense.service';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,10 +20,14 @@ import { ExpenseService } from './services/expense.service';
     HomeComponent,
     AboutItemComponent,
     AboutHomeComponent */
+    
+    
+    RouterOutlet,
     CommonModule,
     RouterOutlet,
-    AddExpenseComponent,
-    ListExpensesComponent
+   // AddExpenseComponent,
+    //ListExpensesComponent,
+    FormsModule
   ],
   providers: [ExpenseService],
   
