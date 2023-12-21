@@ -1,0 +1,9 @@
+<p>list-expenses works!</p>
+<div>
+    <div class="card mt-1" *ngFor="let expense of expenses">
+        <a href="#" class="card-body flex">
+            <span class="text-capitalize font-weight-bold">{{expense.expense}}</span>
+            <span class="float-right mr-2 badge badge-pill badge-warning font-weight-bold amount">{{expense.amount }}</span>
+        </a>
+    </div>
+</div>
